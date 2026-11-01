@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup and troubleshooting
+    url: https://localscribe-local-voice.anubhavsinha98.chatgpt.site/setup.html
+    about: Installation, permissions, shortcuts and meeting-audio help.
+  - name: Existing bug reports
+    url: https://github.com/anubhavsinha98/localscribe-feedback/issues
+    about: Check for a matching report before opening a new one.

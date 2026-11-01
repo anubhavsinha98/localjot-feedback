@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible LocalScribe problem using non-sensitive details.
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report and its comments will be public. A GitHub account is required.
+        Do not include audio, transcripts, meeting notes, dictation, coding prompts, credentials, personal file paths or confidential screenshots.
+        Use a short synthetic example. LocalScribe does not automatically upload diagnostics.
+        This form is for general bugs; a private security/support contact has not been announced yet. Do not disclose sensitive vulnerabilities here.
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Affected feature
+      options:
+        - Dictation / text insertion
+        - Shortcut / recording
+        - Meeting capture / notes
+        - Hindi / Hinglish / translation
+        - Models / performance
+        - Installation / website updates
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: LocalScribe version
+      placeholder: "For example: 0.13.3 (build 24), or unknown if the app will not open"
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe the problem without including private content.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use a short synthetic phrase or example. Say whether the problem happens every time.
+      placeholder: |
+        1. Open…
+        2. Choose…
+        3. Observe…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: input
+    id: application
+    attributes:
+      label: Affected app or terminal (optional)
+      description: App name/version only; leave out window titles, session contents and project paths.
+      placeholder: "For example: iTerm2, Safari, Codex or Claude Code"
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Reviewed diagnostic details (optional)
+      description: In LocalScribe v0.13.3+, use Help → Report a bug… → Preview diagnostic details. Copy only after reviewing. Raw logs are not needed.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand this report is public and have removed private or confidential content.
+          required: true
