@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible LocalScribe problem using non-sensitive details.
+description: Report a reproducible Vokria problem using non-sensitive details.
 title: "[Bug]: "
 labels: [bug, triage]
 body:
@@ -8,8 +8,8 @@ body:
       value: |
         This report and its comments will be public. A GitHub account is required.
         Do not include audio, transcripts, meeting notes, dictation, coding prompts, credentials, personal file paths or confidential screenshots.
-        Use a short synthetic example. LocalScribe does not automatically upload diagnostics.
-        This form is for general bugs; a private security/support contact has not been announced yet. Do not disclose sensitive vulnerabilities here.
+        Use a short synthetic example. Vokria does not automatically upload diagnostics.
+        This form is for general bugs. Use Security → Report a vulnerability for private security disclosure; do not disclose vulnerabilities here.
   - type: dropdown
     id: feature
     attributes:
@@ -27,8 +27,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: LocalScribe version
-      placeholder: "For example: 0.13.3 (build 24), or unknown if the app will not open"
+      label: Vokria version
+      placeholder: "For example: 0.14.1 (build 34), or unknown if the app will not open"
     validations:
       required: true
   - type: textarea
@@ -65,7 +65,7 @@ body:
     id: diagnostics
     attributes:
       label: Reviewed diagnostic details (optional)
-      description: In LocalScribe v0.13.3+, use Help → Report a bug… → Preview diagnostic details. Copy only after reviewing. Raw logs are not needed.
+      description: In Vokria v0.13.3+, use Help → Report a bug… → Preview diagnostic details. Copy only after reviewing. Raw logs are not needed.
       render: text
   - type: checkboxes
     id: privacy

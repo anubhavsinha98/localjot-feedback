@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/anubhavsinha98/localscribe-feedback/security/advisories/new
+    about: Private security disclosure to the maintainers. Do not disclose vulnerabilities in a public issue.
   - name: Setup and troubleshooting
     url: https://localscribe-local-voice.anubhavsinha98.chatgpt.site/setup.html
     about: Installation, permissions, shortcuts and meeting-audio help.
