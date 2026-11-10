@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a reproducible Vokria problem using non-sensitive details.
+description: Report a reproducible LocalJot problem using non-sensitive details.
 title: "[Bug]: "
 labels: [bug, triage]
 body:
@@ -8,7 +8,7 @@ body:
       value: |
         This report and its comments will be public. A GitHub account is required.
         Do not include audio, transcripts, meeting notes, dictation, coding prompts, credentials, personal file paths or confidential screenshots.
-        Use a short synthetic example. Vokria does not automatically upload diagnostics.
+        Use a short synthetic example. LocalJot does not automatically upload diagnostics.
         This form is for general bugs. Use Security → Report a vulnerability for private security disclosure; do not disclose vulnerabilities here.
   - type: dropdown
     id: feature
@@ -27,8 +27,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: Vokria version
-      placeholder: "For example: 0.15.1 (build 36), or unknown if the app will not open"
+      label: LocalJot version
+      placeholder: "For example: 0.16.0 (build 37), or unknown if the app will not open"
     validations:
       required: true
   - type: textarea
@@ -65,7 +65,7 @@ body:
     id: diagnostics
     attributes:
       label: Reviewed diagnostic details (optional)
-      description: In Vokria v0.13.3+, use Help → Report a bug… → Preview diagnostic details. Copy only after reviewing. Raw logs are not needed.
+      description: In LocalJot v0.13.3+, use Help → Report a bug… → Preview diagnostic details. Copy only after reviewing. Raw logs are not needed.
       render: text
   - type: checkboxes
     id: privacy
