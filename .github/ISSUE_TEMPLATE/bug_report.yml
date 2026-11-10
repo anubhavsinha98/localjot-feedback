@@ -28,7 +28,7 @@ body:
     id: version
     attributes:
       label: Vokria version
-      placeholder: "For example: 0.15.0 (build 35), or unknown if the app will not open"
+      placeholder: "For example: 0.15.1 (build 36), or unknown if the app will not open"
     validations:
       required: true
   - type: textarea
